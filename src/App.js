@@ -1,14 +1,27 @@
+import "./App.css";
 
-import './App.css';
-import  Header from "./Header"
-import Nav from './Nav';
-import Footer from './Footer';
+import React from "react";
+import Home_Page from "./Home_page";
+
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 function App() {
   return (
     <>
- <Header/>
-   <Nav/>
-<Footer/>
+      <header>
+        <nav>
+          <Navbar />
+        </nav>
+      </header>
+
+      <main>
+        <Home_Page />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
